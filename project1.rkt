@@ -228,15 +228,18 @@
   (hash-clear! vars)
   (extractState (calcres fileName)))
 
- (interpret "cmmExamples/whilenobraces.cmm")
 
-;   (extractState  (calcres "cmmExamples/example1.cmm"))
-;   (extractState  (calcres "cmmExamples/example2.cmm"))
-;   (extractState  (calcres "cmmExamples/example3.cmm"))
-;   (extractState  (calcres "cmmExamples/example4.cmm"))
-;   (extractState  (calcres "cmmExamples/example5.cmm")) 
-;   (interpret "cmmExamples/truth.cmm")
-;   (interpret "cmmExamples/nestedif.cmm")
+
+(module+ main
+  (interpret "cmmExamples/example1.cmm")
+  (interpret "cmmExamples/example2.cmm")
+  (interpret "cmmExamples/example3.cmm")
+  (interpret "cmmExamples/example4.cmm")
+  (interpret "cmmExamples/example5.cmm")
+  (interpret "cmmExamples/truth.cmm")
+  (interpret "cmmExamples/nestedif.cmm")
+  (interpret "cmmExamples/whilenobraces.cmm")) 
+
 
 
 
